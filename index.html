@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="price-calculator">
+        <div class="container">
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="card">
+                <div class="row form">
+                    <div class="col upper__form">
+                        <div>
+                            <label for="name">Nome Cognome</label>
+                            <input
+                            type="text"
+                            name="name"
+                            id="name-surname"
+                            />
+                        </div>
+                        <div>
+                            <label for="km">Km da percorrere</label>
+                            <input
+                            type="text"
+                            name="km"
+                            id="distance"
+                            />
+                        </div>
+                        <div>
+                            <label for="eta">Fascia d'età</label>
+                            <select name="eta" id="discount">
+                                <option value="0">
+                                    Minorenne
+                                </option>
+                                <option value="1">
+                                    Maggiorenne
+                                </option>
+                                <option value="2">
+                                    Over 65
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col lower__form">
+                        <button id="btn-generate">
+                            Genera
+                        </button>
+                        <button id="btn-cancel">
+                            Annulla
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="your-ticket">
+        <div class="container">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="card">
+                <div class="ticket__passenger">
+                    <p>NOME PASSEGGERO</p>
+                    <p id="ticket__name"></p>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            Offerta
+                        </th>
+                        <th>
+                            Carrozza
+                        </th>
+                        <th>
+                            Codice CP
+                        </th>
+                        <th>
+                            Costo biglietto
+                        </th>
+                    </tr>
+                    <tr>
+                        <td id="ticket__discount-code">
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

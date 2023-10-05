@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #B91547;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.card{
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0 80px;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    color: #B91547;
+}
+
+.upper__form{
+   gap: 35px;
+   margin-bottom: 30px;
+}
+
+input, select{
+    border: 1px solid #B91547;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.lower__form{
+    gap: 11px;
+    padding-bottom: 11px;
+}
+
+.form button{
+    color: #B91547;
+    font-weight: 600;
+    padding: 2px 5px;
+}
+
+.ticket__passenger{
+    font-weight: 700;
+}
+
+
+
+
+.your-ticket .card{
+    display: flex;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.ticket__passenger{
+    background-color: #757575;
+    padding: 5px;
+}
+
+.your-ticket td{
+    padding: 25px;
+}
