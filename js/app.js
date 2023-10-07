@@ -21,14 +21,23 @@ const ticketNameDOMElement = document.getElementById('ticket__name');
 
 const ticketDiscountCodeDOMElement = document.getElementById('ticket__discount-code');
 
+const ticketWagonDOMElement = document.getElementById('ticket__wagon');
 
+const ticketCPDOMElement = document.getElementById('ticket__CP');
 
-
+const ticketPriceDOMElement = document.getElementById('ticket__price');
 
 generateDOMElement.addEventListener('click', 
 function(){
 
-    const distance = parseFloat(distanceDOMElement.value);
+    console.log(parseInt(distanceDOMElement.value));
+
+    const distanceDOMElement_valueControl = parseInt(distanceDOMElement.value)
+
+    if (distanceDOMElement.value < 0 || isNaN(distanceDOMElement_valueControl)) {
+        alert("Numero di Km non valido, riprova.")
+    } else {
+        const distance = parseFloat(distanceDOMElement.value);
     console.log('km: ' + distance);
 
     console.log('codice sconto: ' + discountDOMElement.value);
@@ -55,6 +64,10 @@ function(){
 
     ticketNameDOMElement.innerHTML = nameDOMElement.value;
 
-    
+    ticketWagonDOMElement.innerHTML = Math.floor(Math.random() * (20)) + 1;
 
+    ticketCPDOMElement.innerHTML = Math.floor(Math.random() * (99999 - 1000 +1)) + 1000
+
+    ticketPriceDOMElement.innerHTML = finalPrice.toFixed(2)
+    }
 });

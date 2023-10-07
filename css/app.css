@@ -75,6 +75,17 @@ input, select{
     padding: 5px;
 }
 
+.your-ticket th{
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 .your-ticket td{
-    padding: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+table{
 }
