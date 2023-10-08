@@ -27,6 +27,14 @@ const ticketCPDOMElement = document.getElementById('ticket__CP');
 
 const ticketPriceDOMElement = document.getElementById('ticket__price');
 
+cancelDOMElement.addEventListener('click',
+function(){
+    nameDOMElement.value = '';
+    distanceDOMElement.value = '';
+
+    console.log('reset');
+})
+
 generateDOMElement.addEventListener('click', 
 function(){
 
@@ -66,7 +74,7 @@ function(){
 
     ticketWagonDOMElement.innerHTML = Math.floor(Math.random() * (20)) + 1;
 
-    ticketCPDOMElement.innerHTML = Math.floor(Math.random() * (99999 - 1000 +1)) + 1000
+    ticketCPDOMElement.innerHTML = Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000
 
     ticketPriceDOMElement.innerHTML = finalPrice.toFixed(2)
     }
